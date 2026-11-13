@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Señas-texto</title>
+        <link rel="stylesheet" href="../css/externo.css">
+    </head>
+    <body>
+        <header>
+            <h1>Señas-texto</h1>
+            <p> Realiza una seña frente a la camara y conviertela en texto</p>
+        </header>
+        <main>
+            <section class="convertidor">
+                <h2>Interpreta tu seña</h2>
+
+                <p>
+                    Coloca tu mano frente a la camara y realiza una seña 
+                </p>
+
+                <div class="camara">
+                    <video id="videoCamara" autoplay></video>
+                    <canvas id="canvasManos"></canvas>
+                </div>
+
+                <h3>Texto reconocido: </h3>
+
+                <textarea
+                   placeholder="Aqui aparecerá el mensaje interpretado... " readonly>
+                </textarea>
+
+                <button id="btnCamara" class="btn" type="button">
+                    Iniciar cámara
+                </button>
+
+            </section>
+
+            <a href="../index.html" class="btn volver">Volver</a>
+
+        </main>
+
+        <footer>
+            <p>Comunicarse es un derecho NO un privilegio</p>
+        </footer>
+
+        
+        <script type="module" src="../js/script.js"></script>
+
+
+    </body>
+
+</html>
